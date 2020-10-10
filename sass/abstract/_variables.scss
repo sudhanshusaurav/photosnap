@@ -1,0 +1,33 @@
+//////////////////////////////////////////////////
+// Colors
+
+$color-black: #000;
+$color-grey-light: #dfdfdf;
+$color-white: #fff;
+
+$main-gradient: linear-gradient(
+  to right top,
+  rgba(#ffc593, 1),
+  rgba(#bc7198, 1),
+  rgba(#5a77ff, 1)
+);
+
+///////////////////////////////////////////////////
+// FOnt-weights
+
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+///////////////////////////////////////////////////
+
+$transition-xs: all 0.3s;
+$transition-sm: all 0.5s;
+$transition-md: all 0.7s;
+$transition-lg: all 1s;
+
+////////////////////////////////////////////
+$gutter-xl: 10rem;
+$gutter-md: 5rem;
+$gutter-sm: 2rem;
+$gutter-xs: 1rem;

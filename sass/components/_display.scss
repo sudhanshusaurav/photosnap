@@ -1,0 +1,47 @@
+.display {
+  display: flex;
+  align-items: center;
+
+  @include media(phone-land) {
+    flex-direction: column-reverse;
+  }
+
+  &__text {
+    flex: 0 0 40%;
+    padding: 0 $gutter-xl;
+    position: relative;
+
+    @include media(tab-land) {
+      flex: 0 0 60%;
+    }
+    @include media(phone-land) {
+      width: 100%;
+      padding: $gutter-xl;
+    }
+
+    h1 {
+      margin-bottom: $gutter-sm;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: $gutter-md;
+    }
+  }
+
+  &__img {
+    background: red;
+    flex: 0 0 60%;
+    @include media(tab-land) {
+      flex: 0 0 40%;
+    }
+    @include media(phone-land) {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+}

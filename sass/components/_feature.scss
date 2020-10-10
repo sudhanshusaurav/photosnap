@@ -1,0 +1,29 @@
+.feature {
+  text-align: center;
+  padding: $gutter-sm;
+  width: 33.33%;
+  @include media(tab-port) {
+    width: 100%;
+    margin-bottom: $gutter-md;
+  }
+
+  &__icon-box {
+    height: 8rem;
+    margin-bottom: $gutter-sm;
+    @include media(phone) {
+      height: 12rem;
+    }
+  }
+
+  &__text-box {
+    @include media(tab-port) {
+      padding: 0 $gutter-md;
+    }
+    @include media(phone) {
+      padding: 0 $gutter-sm;
+    }
+    h3 {
+      margin-bottom: $gutter-xs;
+    }
+  }
+}

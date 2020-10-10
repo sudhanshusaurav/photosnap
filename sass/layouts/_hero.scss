@@ -1,0 +1,23 @@
+.hero {
+  &__text {
+    &::after {
+      content: "";
+      width: 0.5rem;
+      height: 100%;
+      border-radius: 0 100px 100px 0;
+      background: $main-gradient;
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      @include media(phone-land) {
+        width: 40%;
+        height: 0.5rem;
+        border-radius: 100px;
+        top: 0;
+        left: 10rem;
+        z-index: 0;
+      }
+    }
+  }
+}

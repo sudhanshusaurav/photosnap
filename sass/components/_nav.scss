@@ -1,0 +1,15 @@
+.nav {
+  display: flex;
+  list-style: none;
+
+  &__link {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: $transition-xs;
+
+    &:hover {
+      color: $color-grey-light;
+    }
+  }
+}

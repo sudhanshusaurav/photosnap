@@ -1,0 +1,41 @@
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+
+  @include media(tab-land) {
+    max-width: 96rem;
+  }
+
+  @include media(tab-port) {
+    max-width: 72rem;
+  }
+
+  @include media(phone-land) {
+    max-width: 54rem;
+  }
+
+  @include media(phone) {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+}
+
+.text-dark {
+  color: $color-black;
+}
+
+.text-light {
+  color: $color-white;
+}
+
+.bg-dark {
+  background: $color-black;
+}
+
+.bg-light {
+  background: $color-white;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
