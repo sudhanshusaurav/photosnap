@@ -9,6 +9,10 @@ const DOMstrings = (DOMstr = {
     yearly: document.getElementById("yearly"),
     serviceTable: document.querySelector(".service-table"),
     gallery: document.querySelector(".section-gallery"),
+    basicRate: document.querySelector(".basic-rate"),
+    proRate: document.querySelector(".pro-rate"),
+    businessRate: document.querySelector(".business-rate"),
+    planDuration: Array.from(document.querySelectorAll(".plan-duration")),
   }),
   Data = (table = {
     tableData: [
@@ -130,10 +134,22 @@ const DOMstrings = (DOMstr = {
         e.priceTogglerBtn.classList.contains("price__toggler--active")
           ? (e.priceTogglerBtn.classList.remove("price__toggler--active"),
             (e.monthly.style.fontWeight = "700"),
-            (e.yearly.style.fontWeight = "300"))
+            (e.yearly.style.fontWeight = "300"),
+            (e.basicRate.textContent = "$19.00"),
+            (e.proRate.textContent = "$39.00"),
+            (e.businessRate.textContent = "$99.00"),
+            e.planDuration.forEach((plan) => {
+              plan.textContent = "per month";
+            }))
           : (e.priceTogglerBtn.classList.add("price__toggler--active"),
             (e.yearly.style.fontWeight = "700"),
-            (e.monthly.style.fontWeight = "300"));
+            (e.monthly.style.fontWeight = "300"),
+            (e.basicRate.textContent = "$190.00"),
+            (e.proRate.textContent = "$390.00"),
+            (e.businessRate.textContent = "$990.00"),
+            e.planDuration.forEach((plan) => {
+              plan.textContent = "per year";
+            }));
       },
     };
   })(DOMstrings);
