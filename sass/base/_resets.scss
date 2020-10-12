@@ -16,6 +16,10 @@ html {
   @include media(tab-port) {
     font-size: 50%;
   }
+
+  @include media(phone-land) {
+    font-size: 37.5%;
+  }
 }
 
 body {
