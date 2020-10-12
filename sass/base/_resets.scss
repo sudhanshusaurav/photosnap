@@ -16,9 +16,6 @@ html {
   @include media(tab-port) {
     font-size: 50%;
   }
-  @include media(phone) {
-    font-size: 40%;
-  }
 }
 
 body {
