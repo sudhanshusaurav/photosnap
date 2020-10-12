@@ -1,0 +1,42 @@
+.invite__content {
+  padding: $gutter-md $gutter-xl;
+  background-image: url(../../img/shared/desktop/bg-beta.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  @include media(tab-land) {
+    background-image: url(../../img/shared/tablet/bg-beta.jpg);
+  }
+
+  @include media(phone-land) {
+    background-image: url(../../img/shared/mobile/bg-beta.jpg);
+    padding: $gutter-xl;
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1 {
+      margin-bottom: $gutter-md;
+    }
+  }
+
+  &::after {
+    content: "";
+    height: 100%;
+    width: 0.5rem;
+    border-radius: 0 100px 100px 0;
+    background: $main-gradient;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @include media(phone-land) {
+      width: 30%;
+      height: 0.5rem;
+      border-radius: 0 0 100px 100px;
+      left: 10rem;
+    }
+  }
+}

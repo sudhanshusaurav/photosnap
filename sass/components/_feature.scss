@@ -1,6 +1,6 @@
 .feature {
   text-align: center;
-  padding: $gutter-sm;
+  padding: $gutter-sm $gutter-md;
   width: 33.33%;
   @include media(tab-port) {
     width: 100%;

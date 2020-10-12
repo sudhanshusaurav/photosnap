@@ -1,0 +1,19 @@
+.stories-hero {
+  background-image: url(../../img/stories/desktop/moon-of-appalacia.jpg);
+  background-size: cover;
+  padding: $gutter-xl 0;
+
+  h1 {
+    margin: $gutter-sm 0;
+  }
+
+  .paragraph {
+    margin-top: $gutter-sm;
+  }
+
+  .hero__text {
+    &::after {
+      display: none;
+    }
+  }
+}

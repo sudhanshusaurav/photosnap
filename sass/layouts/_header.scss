@@ -3,8 +3,11 @@
   display: flex;
   align-items: center;
 
+  @include media(phone-land) {
+    padding: 5rem 0;
+  }
   @include media(phone) {
-    padding: 0 2rem;
+    padding: 2rem;
   }
 
   &__logo {
@@ -39,6 +42,7 @@
       clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
       pointer-events: none;
       transition: $transition-sm;
+      z-index: 999;
     }
 
     @include media(phone) {
@@ -88,7 +92,6 @@
       color: $color-black;
     }
 
-    &:focus,
     &:active {
       background: $main-gradient;
       -webkit-background-clip: text;
